@@ -9,6 +9,7 @@
 	&& rm -rf /var/lib/apt/lists/* \
 	&& apt autoremove \
 	&& apt autoclean
+
  ENV CPLUS_INCLUDE_PATH=/usr/include/gdal
  ENV C_INCLUDE_PATH=/usr/include/gdal
 
