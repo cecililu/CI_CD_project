@@ -20,7 +20,7 @@ pipeline {
     post{
         success{
             echo 'Success'
-            echo `git rev-parse --short HEAD`
+            // echo `git rev-parse --short HEAD`
             // slackSend (color: '#00FF00', message: "SUCCESS: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
         }
         failure {
