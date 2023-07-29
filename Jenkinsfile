@@ -12,7 +12,7 @@ pipeline {
                 // sh "chmod 755 ./deploy.sh"
                 // sh "sh ./deploy.sh"
                 echo "Deploy done"
-                echo "Deploy done"
+               
                 // sh 'ssh root@139.59.67.104 "bash -s" < ./deploy.sh'
             }
         }
