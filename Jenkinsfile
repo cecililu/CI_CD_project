@@ -43,15 +43,20 @@ pipeline {
          stages {
            
                 stage('github checkout code'){
+
                     steps(){
                         checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'githubcecil', url: 'https://github.com/cecililu/CI_CD_project']])
                     }
                 }
                 stage("build docker image"){
                     steps{
+                         sh 'echo  $USER'
+                         sh 'pwd'
+                         sh 'ip -a'
+                         
                         script{
                              sh 'docker build -t docker-cicd:v1 .'
-                             
+
                         }
                     }
                 }
