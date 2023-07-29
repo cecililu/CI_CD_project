@@ -52,7 +52,7 @@ pipeline {
                     steps{
                          sh 'echo  $USER'
                          sh 'pwd'
-                       
+                         sh 'docker ps'
                          
                         script{
                              sh 'docker build -t docker-cicd:v1 .'
