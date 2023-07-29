@@ -51,6 +51,7 @@ pipeline {
                 stage("build docker image"){
                     steps{
                          sh 'echo  $USER'
+                         sh 'echo  $USER'
                          sh 'pwd'
                          sh 'docker ps'
                          
